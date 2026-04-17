@@ -1171,6 +1171,270 @@ export const EXERCISES: Exercise[] = [
   },
 
   // ─────────────────────────────────────────────────────────────────
+  // BRYST – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'machine-chest-press',
+    name: 'Maskin benkpress',
+    muscleGroup: 'chest',
+    primaryMuscles: ['pec_major_upper', 'pec_major_lower'],
+    secondaryMusclesDetailed: ['triceps_long', 'triceps_lateral', 'delt_anterior', 'serratus_anterior'],
+    movementPattern: 'horizontal_push',
+    tier: 'compound_secondary',
+    equipmentTypes: ['machine'],
+    equipment: 'Maskin',
+    difficulty: 'beginner',
+    cues: ['Juster setet så håndtakene er i bryststhøyde', 'Kontrollert tilbake – ikke la vekten synke ukontrollert', 'Godt alternativ når frie vekter ikke passer'],
+    description: 'Maskinvarianten av benkpress. Fjerner balansekravet og er godt egnet for nybegynnere eller rehabilitering.',
+  },
+
+  {
+    id: 'close-grip-bench-press',
+    name: 'Smal benkpress',
+    muscleGroup: 'arms',
+    primaryMuscles: ['triceps_long', 'triceps_lateral', 'triceps_medial'],
+    secondaryMusclesDetailed: ['pec_major_upper', 'pec_major_lower', 'delt_anterior'],
+    movementPattern: 'horizontal_push',
+    tier: 'compound_secondary',
+    equipmentTypes: ['barbell'],
+    equipment: 'Stang',
+    difficulty: 'intermediate',
+    cues: ['Skulderbreddes grep – ikke for smalt (belaster håndledd)', 'Albuer nær kroppen gjennom hele bevegelsen', 'Senk til nedre bryst, press opp og litt bakover'],
+    description: 'Benkpress-variant der smalere grep skifter fokus til triceps. God overbelastningsøvelse for alle tre tricepshoder.',
+  },
+
+  {
+    id: 'dumbbell-pullover',
+    name: 'Pullover (manual)',
+    muscleGroup: 'chest',
+    primaryMuscles: ['pec_major_upper', 'lat'],
+    secondaryMusclesDetailed: ['serratus_anterior', 'triceps_long', 'teres_major'],
+    movementPattern: 'horizontal_push',
+    tier: 'isolation',
+    equipmentTypes: ['dumbbell'],
+    equipment: 'Manual',
+    difficulty: 'beginner',
+    cues: ['Ligg på tvers av benk med skuldrene på benken', 'Hold manualen med begge hender over brystet', 'Senk bak hodet i en bue – hold albuene lett bøyde'],
+    description: 'Unik øvelse som treffer både bryst og lats i én bevegelse. Flat arm = brystfokus, bøyd arm = latfokus.',
+  },
+
+  {
+    id: 'landmine-press',
+    name: 'Landmine Press',
+    muscleGroup: 'chest',
+    primaryMuscles: ['pec_major_upper'],
+    secondaryMusclesDetailed: ['delt_anterior', 'triceps_long', 'triceps_lateral', 'serratus_anterior'],
+    movementPattern: 'horizontal_push',
+    tier: 'compound_secondary',
+    equipmentTypes: ['barbell'],
+    equipment: 'Stang / Landmine-feste',
+    difficulty: 'intermediate',
+    cues: ['Stangen er festet i hjørnet eller en landmine-holder', 'Press fra skulder/brysthøyde og opp i bue', 'Godt alternativ for øvre bryst uten flat benk'],
+    description: 'Skrå press-bevegelse som spesielt aktiverer øvre bryst. Skånsom for skuldrene sammenlignet med incline benkpress.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // RYGG – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 't-bar-row',
+    name: 'T-Bar roing',
+    muscleGroup: 'back',
+    primaryMuscles: ['rhomboids', 'trap_middle', 'trap_lower', 'lat'],
+    secondaryMusclesDetailed: ['biceps_brachii', 'brachialis', 'delt_posterior', 'erector_spinae'],
+    movementPattern: 'horizontal_pull',
+    tier: 'compound_primary',
+    equipmentTypes: ['barbell'],
+    equipment: 'Stang / T-Bar maskin',
+    difficulty: 'intermediate',
+    cues: ['Foroverbøyd ca. 45°, ryggen nøytral', 'Ro mot navlen, ikke mot brystet', 'Klem skulderbladen hardt i toppposisjon'],
+    description: 'Svært effektiv for midtre og nedre trapezius og rhomboidene. Gir høy overbelastning med nøytralgrep.',
+  },
+
+  {
+    id: 'rack-pull',
+    name: 'Rack Pull',
+    muscleGroup: 'back',
+    primaryMuscles: ['erector_spinae', 'trap_upper', 'trap_middle'],
+    secondaryMusclesDetailed: ['glute_max', 'biceps_femoris', 'lat', 'brachioradialis'],
+    movementPattern: 'hinge',
+    tier: 'compound_primary',
+    equipmentTypes: ['barbell'],
+    equipment: 'Stang / Rack',
+    difficulty: 'intermediate',
+    cues: ['Stangen starter fra knehøyde eller litt under', 'Kortere bevegelsesutslag enn fullt markløft', 'Tillater tyngre belastning – god for overbelastning av traps og korsrygg'],
+    description: 'Forkortet markløft fra et stativ. Brukes for å overbelaste korsrygg, traps og grep med tyngre vekter enn fullt markløft.',
+  },
+
+  {
+    id: 'barbell-shrug',
+    name: 'Shrugs (stang)',
+    muscleGroup: 'back',
+    primaryMuscles: ['trap_upper'],
+    secondaryMusclesDetailed: ['trap_middle', 'brachioradialis'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['barbell', 'dumbbell'],
+    equipment: 'Stang / Manualer',
+    difficulty: 'beginner',
+    cues: ['Trekk skuldrene rett opp mot ørene', 'Ingen rulling av skuldrene – bare opp og ned', 'Hold 1 sek på toppen for full kontraksjon'],
+    description: 'Isolerer øvre trapezius. Viktig for nakkestyrke og skulderbredde. Manualer gir mer bevegelsesutslag enn stang.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // SKULDRE – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'push-press',
+    name: 'Push Press',
+    muscleGroup: 'shoulders',
+    primaryMuscles: ['delt_anterior', 'delt_lateral'],
+    secondaryMusclesDetailed: ['triceps_long', 'triceps_lateral', 'triceps_medial', 'rectus_femoris', 'glute_max', 'trap_upper'],
+    movementPattern: 'vertical_push',
+    tier: 'compound_primary',
+    equipmentTypes: ['barbell'],
+    equipment: 'Stang',
+    difficulty: 'intermediate',
+    cues: ['Lett knebøy og eksplosivt hip-drive gir fart på stangen', 'Trykket fra bena overføres gjennom core til stangen', 'Lås ut over hodet mens beina er strake'],
+    description: 'Eksplosiv skulderpress der benpress bidrar i initieringsfasen. Tillater tyngre belastning enn strikt skulderpress.',
+  },
+
+  {
+    id: 'lu-raises',
+    name: 'Lu Raises',
+    muscleGroup: 'shoulders',
+    primaryMuscles: ['delt_lateral', 'delt_anterior', 'delt_posterior', 'supraspinatus'],
+    secondaryMusclesDetailed: ['trap_upper', 'trap_middle'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['dumbbell'],
+    equipment: 'Manualer',
+    difficulty: 'intermediate',
+    cues: ['Start med manualene foran kroppen', 'Løft til over hodet i en kontrollert bue', 'Oppkalt etter vektløfter Lu Xiaojun – brukes som oppvarming og rehabilitering'],
+    description: 'Full-skulder-mobilitet og -aktivering. Kombinerer fremheving og sideheving til overhead-posisjon.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // BEIN – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'hack-squat',
+    name: 'Hack Squat',
+    muscleGroup: 'legs',
+    primaryMuscles: ['rectus_femoris', 'vastus_lateralis', 'vastus_medialis', 'vastus_intermedius'],
+    secondaryMusclesDetailed: ['glute_max', 'adductors', 'biceps_femoris'],
+    movementPattern: 'squat',
+    tier: 'compound_secondary',
+    equipmentTypes: ['machine'],
+    equipment: 'Hack Squat-maskin',
+    difficulty: 'beginner',
+    cues: ['Skuldrene mot puten, ryggen mot platen', 'Fothøyde styrer fokus: lavt = mer quad, høyt = mer sete', 'Dyp bøy mulig uten like mye krav til ankelmobilitet som knebøy'],
+    description: 'Maskinknebøy med enda mer quadriceps-isolasjon enn beinpress. God for å bygge quad-volum.',
+  },
+
+  {
+    id: 'seated-calf-raise',
+    name: 'Sittende tåhev',
+    muscleGroup: 'legs',
+    primaryMuscles: ['soleus'],
+    secondaryMusclesDetailed: ['gastrocnemius'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['machine'],
+    equipment: 'Maskin / Manual på lår',
+    difficulty: 'beginner',
+    cues: ['Bøyde kne isolerer soleus fremfor gastrocnemius', 'Full bevegelse: alt ned til strekk, alt opp', 'Pause øverst for kontraksjon'],
+    description: 'Isolerer soleus (dyp leggmuskel) som kun trenes effektivt med bøyt kne. Komplementerer stående tåhev.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // ARMER – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'concentration-curl',
+    name: 'Concentrationcurl',
+    muscleGroup: 'arms',
+    primaryMuscles: ['biceps_brachii'],
+    secondaryMusclesDetailed: ['brachialis'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['dumbbell'],
+    equipment: 'Manual',
+    difficulty: 'beginner',
+    cues: ['Sittende med albuen mot innsiden av låret', 'Fullt bevegelsesutslag – strekk i bunn, klem i topp', 'Rotér håndflaten utover på vei opp for full kontraksjon'],
+    description: 'Klassisk isolasjonsøvelse som fjerner all mulighet for sving. Aktiverer biceps topp (peak) effektivt.',
+  },
+
+  {
+    id: 'wrist-curl',
+    name: 'Håndleddscurl',
+    muscleGroup: 'arms',
+    primaryMuscles: ['brachioradialis'],
+    secondaryMusclesDetailed: ['biceps_brachii'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['barbell', 'dumbbell'],
+    equipment: 'Stang / Manualer',
+    difficulty: 'beginner',
+    cues: ['Underarmene hvilende på lår eller benk', 'Kun håndleddet beveger seg', 'Pronert grep = underarms strekker, supinert grep = bøyer'],
+    description: 'Styrker underarm og grepsstyrke. Viktig supplement for klatring, roing og andre grep-avhengige øvelser.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CORE – tillegg
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'cable-woodchop',
+    name: 'Kabel woodchop',
+    muscleGroup: 'core',
+    primaryMuscles: ['oblique_external', 'oblique_internal'],
+    secondaryMusclesDetailed: ['rectus_abdominis', 'transverse_abdominis', 'delt_anterior'],
+    movementPattern: 'rotation',
+    tier: 'isolation',
+    equipmentTypes: ['cable'],
+    equipment: 'Kabel',
+    difficulty: 'beginner',
+    cues: ['Bevegelsen går fra høy til lav (eller lav til høy)', 'Roter fra hoften – ikke bare armene', 'Beina stabile, core aktiv gjennom hele'],
+    description: 'Funksjonell rotasjons-core-øvelse med kabelbelastning. Trener skrå magemusklene i diagonale bevegelsesmønstre.',
+  },
+
+  {
+    id: 'bird-dog',
+    name: 'Bird-Dog',
+    muscleGroup: 'core',
+    primaryMuscles: ['erector_spinae', 'multifidus', 'transverse_abdominis'],
+    secondaryMusclesDetailed: ['glute_max', 'delt_anterior', 'rectus_abdominis'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['bodyweight'],
+    equipment: 'Kroppsvekt',
+    difficulty: 'beginner',
+    cues: ['På alle fire, strekk motsatt arm og ben samtidig', 'Hold korsryggen nøytral – ikke roter hoften', 'Langsomt og kontrollert – stabiliteten er poenget'],
+    description: 'Grunnleggende korsrygg- og kjernestabiliseringsøvelse. Anbefales av fysioterapeuter som første øvelse ved korsryggplager.',
+  },
+
+  {
+    id: 'reverse-crunch',
+    name: 'Reverse crunch',
+    muscleGroup: 'core',
+    primaryMuscles: ['rectus_abdominis'],
+    secondaryMusclesDetailed: ['psoas', 'hip_flexors', 'oblique_internal'],
+    movementPattern: 'isolation',
+    tier: 'isolation',
+    equipmentTypes: ['bodyweight'],
+    equipment: 'Kroppsvekt',
+    difficulty: 'beginner',
+    cues: ['Ligg på rygg, ta bena mot brystet ved å krumme korsryggen', 'Hips løftes lett av gulvet i topp-posisjonen', 'Kontrollert ned – ikke dropp beina'],
+    description: 'Aktiverer nedre del av rectus abdominis mer enn standard crunch. Skånsom for nakken siden du ikke løfter hodet.',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
   // TOTALØVELSER
   // ─────────────────────────────────────────────────────────────────
 
