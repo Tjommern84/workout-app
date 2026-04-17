@@ -3,7 +3,6 @@
 import React, { createContext, useContext, useReducer, useEffect, useCallback, useRef } from 'react'
 import { WorkoutRecord, ActiveWorkout, LoggedSet, UserSettings, MuscleGroup, ProgramCycle } from '@/lib/types'
 import { getById } from '@/lib/exercises'
-import { MUSCLE_INFO } from '@/lib/anatomy'
 import {
   loadHistory, saveHistory,
   loadActiveWorkout, saveActiveWorkout,
@@ -117,9 +116,7 @@ function reducer(state: WorkoutState, action: Action): WorkoutState {
       for (const ex of cleanedExercises) {
         const def = getById(ex.exerciseId)
         if (!def) continue
-        for (const muscle of def.primaryMuscles) {
-          trainedGroups.add(MUSCLE_INFO[muscle].muscleGroup)
-        }
+        trainedGroups.add(def.muscleGroup)
       }
 
       const record: WorkoutRecord = {
